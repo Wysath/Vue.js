@@ -2,20 +2,22 @@
 export default {
     name: 'FichePaysView',
     props: {
-        parameterValue: {
-            type: String,
+        id: {
+            type: Number,
             required: true
         }
     },
+    computed: {
+        pays() {
+            return this.id === 1 ? 'France' : this.id === 2 ? 'Espagne' : 'Pays inconnu';
+        }
+    }
 }
 </script>
 
 <template>
     <div>
-        <h1 v-if="pays.id === 1">France</h1>    
-    </div>
-    <div>
-        <h1 v-if="pays.id === 2">Espagne</h1>
+        <h1>{{ pays }}</h1>    
     </div>
 </template>
 

@@ -1,6 +1,6 @@
 <script setup>
 
-import Pays from '@/view/PaysView.vue';
+// import Pays from '@/view/PaysView.vue';
 
 const title = 'Welcome to the Pays view'
 const description = 'This is a basic Vue.js view template'
@@ -25,6 +25,7 @@ const pays = Array.from({ length: 10 }, (_, index) => ({
       </li>
     </ul>
   </div>
+
 </template>
 
 <style scoped>
